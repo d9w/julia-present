@@ -1,0 +1,48 @@
+\documentclass[xcolor=table]{beamer}
+
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+%% \usetheme{CambridgeUS}%+
+%% \usetheme{Goettingen}%+
+%% \usetheme{Marburg}%+
+\usepackage[ddmmyyyy]{datetime}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[table]{xcolor}
+\usepackage{fixltx2e}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{media9}
+\usepackage{minted}
+
+\title{The Julia Language}
+\logo{\includegraphics[width=0.1\textwidth]{logo}}
+\author{Dennis Wilson}
+\date{\today}
+
+\usepackage{booktabs}
+%% \usepackage[natbib=true, bibstyle=authoryear, citestyle=authoryear-comp]{biblatex}
+\usepackage{beamerthemesplit}
+\newcommand{\Lagr}{\mathcal{L}}
+\usetheme{Amsterdam}
+
+\begin{document}
+
+\maketitle
+%% \frame{\titlepage}
+
+\frame{\tableofcontents}
+
+\include{motivation}
+\include{tutorial}
+\include{ecosystem}
+\include{conclusion}
+
+\end{document}
