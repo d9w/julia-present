@@ -3,9 +3,10 @@
 	\frametitle{Why I use Julia}
   \begin{itemize}
     \item Fast
-    \item Plays nice with C/++ and Python
+    \item Plays nice with shell, C/++ and Python
     \item Vectors or loops
     \item Read/Evaluate/Print/Loop (REPL)
+    \item Growing ecosystem
   \end{itemize}
 \end{frame}
 
@@ -228,42 +229,6 @@ julia> s .= replace.(lowercase.(s), r"\s+", "-")
  "the-quick-brown"   
  "fox-jumped"        
  "over-the-lazy-dog."
-  \end{minted}
-  \end{tiny}
-\end{frame}
-
-\begin{frame}[fragile]
-	\frametitle{REPL}
-  \begin{tiny}
-  \begin{minted}{julia}
-julia> 42 <Return/Enter>
-42
-
-julia> 42;
-
-julia> ?
-
-help?> quit
-   search: quit QuickSort PartialQuickSort require quantile quantile!
-   ::
-           quit()
-
-           Quit the program indicating that the processes completed successfully.
-           This function calls ``exit(0)`` (see :func:`exit`).
-
-julia> ;
-
-shell>
-
-shell> ls
-file.txt   executable.exe   directory file2.txt
-
-julia> w <TAB>
-wait                    whos                     with_rounding            writedlm
-warn                    widemul                  workers                  writemime
-watch_file              widen                    workspace                writesto
-which                   with_bigfloat_precision  write                    wstring
-while                   with_bigfloat_rounding   writecsv
   \end{minted}
   \end{tiny}
 \end{frame}
