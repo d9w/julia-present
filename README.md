@@ -1,4 +1,4 @@
-# The Julia Language
+# Presentations
 
-A presentation given at the University of Toulouse on the Julia Language, with a
-short code demonstration.
+Collective repository for different presentations. All presentations are covered
+by the CC BY-SA license; for more see LICENSE.txt.
