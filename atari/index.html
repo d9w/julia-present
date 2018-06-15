@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Evolving simple programs for playing Atari games</title>
+
+		<meta name="description" content="CGP playing Atari games">
+		<meta name="author" content="DG Wilson">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+	</head>
+
+	<body>
+		  <div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+        <section data-background-video="video/solaris.mp4" data-background-color="#000000">
+          <h3>Evolving simple programs for playing Atari games</h3>
+          <p><small>
+              DG Wilson<br/><br/>
+              <code>dennis.wilson@irit.fr</code>
+          </small></p>
+				</section>
+
+				<section>
+					<h2>Overview</h2>
+					<ul>
+						<li>Arcade Learning Environment</li>
+						<li>Cartesian Genetic Programming</li>
+						<li>Atari playing with CGP</li>
+            <li>Example programs from results</li>
+					</ul>
+				</section>
+
+				<section>
+            <section data-background-video="video/asteroids.mp4" data-background-color="#000000">
+                <h4>Arcade Learning Environment</h4>
+                <p>[Bellemare et al., 2013]</p>
+                <ul>
+                    <li>HyperNEAT [Hausknecht, 2012]</li>
+                    <li>DQN [Mnih et al., 2015]</li>
+                    <li>Dueling DQN [Wang et al., 2015]</li>
+                    <li>Prioritized experience replay [Schaul et al., 2015]</li>
+                    <li>Double DQN [Hasselt et al., 2016]</li>
+                    <li>A3C [Mnih et al., 2016]</li>
+                    <li>Tangled Problem Graphs [Kelly and Heywood, 2017]</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Deep reinforcement learning</h4>
+                <img class="plain" src="figs/dqn.png">
+                <p><small>[Mnih et al., 2015]</small></p>
+            </section>
+            <section>
+                <h4>HyperNEAT: Multiple representations</h4>
+                <img class="plain" src="figs/hyperneat.png">
+                <p><small>[Hausknecht, 2012]</small></p>
+            </section>
+            <section>
+                <h4>TPG: Decimal Feature Grid</h4>
+                <img class="plain" src="figs/tpg.png">
+                <p><small>[Kelly and Heywood, 2017]</small></p>
+            </section>
+            <section>
+                <h4>TPG: Multi-Task Learning</h4>
+                <img class="plain" src="figs/tpg_multi.png" height="400">
+                <p><small>[Kelly and Heywood, 2017]</small></p>
+            </section>
+        </section>
+
+				<section>
+            <section>
+                <h4>Cartesian Genetic Programming</h4>
+                <img class="plain" src="figs/cgp/cgp.png">
+                <p><small>[Miller, 2011]</small></p>
+            </section>
+
+            <section>
+                <h4>CGP: Junk nodes</h4>
+                <img class="plain" src="figs/cgp/inactive.png">
+                <p><small>[Miller, 2001]</small></p>
+            </section>
+
+            <section>
+                <h4>Recurrent CGP</h4>
+                <img class="plain" src="figs/cgp/rcgp.png">
+                <p><small>[Turner and Miller, 2014]</small></p>
+            </section>
+
+            <section>
+                <h4>Mixed-Type CGP</h4>
+                <img class="plain" src="figs/cgp/mtcgp.png">
+                <p><small>[Harding et al., 2012]</small></p>
+            </section>
+
+            <section>
+                <h4>Image-Processing CGP</h4>
+                <img class="plain" src="figs/cgp/ipcgp.png">
+                <p><small>[Harding et al., 2013]</small></p>
+            </section>
+        </section>
+
+				<section>
+            <section>
+                <h4>CGP for Atari playing</h4>
+                <img class="plain" src="figs/scheme.png">
+            </section>
+            <section>
+                <h4>Mathematical functions</h4>
+                <img class="plain" src="figs/func_math.png">
+            </section>
+            <section>
+                <h4>Statistical functions</h4>
+                <img class="plain" src="figs/func_stats.png">
+            </section>
+            <section>
+                <h4>Array functions</h4>
+                <img class="plain" src="figs/func_lists.png">
+            </section>
+        </section>
+
+				<section>
+            <section data-background-video="video/defender.mp4" data-background-color="#000000">
+                <h3>Results</h3>
+            </section>
+
+            <section>
+                <h4>Centipede</h4>
+                <video height="400px" autoplay loop>
+                <source src="video/centipede.mp4" type="video/mp4">
+                </video>
+                <img class="plain" src="figs/centipede_graph.png" height="400px">
+            </section>
+
+            <section>
+                <h4>Kung Fu Master</h4>
+                <video height="400px" autoplay loop>
+                <source src="video/kung_fu_master.mp4" type="video/mp4">
+                </video>
+                <img class="plain" src="figs/kung_fu_master_graph.png" height="400px">
+            </section>
+
+            <section data-background="figs/boxing_graph.png" data-background-size="1200px">
+                <h4>Boxing</h4>
+                <video height="400px" autoplay loop>
+                <source src="video/boxing.mp4" type="video/mp4">
+                </video>
+            </section>
+        </section>
+
+        <section data-background-video="video/krull.mp4" data-background-color="#000000">
+            <h3>Thank you</h3>
+            <p>https://github.com/d9w/CGP.jl</p>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
